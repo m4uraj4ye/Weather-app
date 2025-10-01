@@ -78,3 +78,31 @@ async function fetchWeather() {
     getWeatherData(geocodeData.lon, geocodeData.lat);
 
 }
+
+/* async function coatQuery(fetchWeather) {
+        const response = await fetchWeather();
+        if (!response.ok) {
+            console.error("Error:", error);
+            return;
+        } 
+        const data = response.json();
+
+        const coatQuerySection = document.getElementById("coat-query");
+        coatQuerySection.style.display = "block";
+        coatQuerySection.style ="color: white";
+        coatQuerySection.innerHTMl = "<h3> Will you need a jacket today? </h3>";
+        if (data.main.temp - 273.15 < 13) {
+            coatQuerySection.innerHTML = `
+            <h4> Very likely! </h4>`;
+        } else if (data.main.temp - 273.15 >= 13 && data.main.temp - 273.15 < 17) {
+            coatQuerySection.innerHTML = `
+            <h4> Likely! </h4>`;  
+        } else if (data.main.temp - 273.15 >=17 && data.main.temp - 273.15 <= 20) {
+            coatQuerySection.innerHTML = `
+            <h4> Unlikely! </h4>`;
+        } else {
+            coatQuerySection.innerHTMl = `
+            <h4> Very unlikely! </h4>`;    
+        }
+    }
+*/
