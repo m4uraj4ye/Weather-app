@@ -7,5 +7,3 @@
 
 <p>API used: <a href="https://openweathermap.org/">Open Weather API </a></p>
 
-<h4>Progress:</h4>
-<p>I have managed to get the code to run, there is still 1 error remaining. An unexpected character is appearing in the temperature section, to combat this I am going to research appending the temperature literal so it removes it automatically before displaying on the page.</p>
